@@ -1,0 +1,78 @@
+
+
+*, *::before, *::after{
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+body{
+  width: 100%;
+  height: 130vh;
+  margin: 0;
+  background-image: linear-gradient(to right, rgb(24, 189, 201),rgb(187, 250, 145), rgb(25, 226, 193));
+}
+
+.baslikDiv{
+  width: 100%;
+  height: 80px;
+  margin-top:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.baslikDiv{
+  margin: 2px;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 8px rgb(200, 200, 250) , -2px 2px 8px rgb(258, 190, 300), 2px -2px 8px rgb(255, 238, 90);
+
+}
+
+.calculator-grid{
+  display: grid;
+  margin-top: 5rem;
+  justify-content: center;
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: minmax(6rem, auto) repeat(5, 5rem);
+}
+
+.calculator-grid button{
+  cursor: pointer;
+  font-size: 1.8rem;
+  border: 1px solid rgb(22, 181, 230);
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.726);
+
+}
+
+.calculator-grid button:hover, .calculator-grid button:focus{
+
+  background-color: rgba(238, 238, 42, 0.979);
+
+}
+
+.span-two{
+  grid-column: span 2;
+}
+
+.output{
+  grid-column: 1 / -1;
+  background-color: rgba(30, 215, 221, 0.65);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0.752rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.previous-operand{
+  color: rgba(243, 26, 26);
+  font-size: 1.3rem;
+}
+
+.current-operand{
+  color: rgb(243, 26, 26);
+  font-size: 2.5rem;
+}
